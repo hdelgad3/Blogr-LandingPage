@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC;AACD,OAAO;AACP,QAAQ,CAAC;EACP,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,IAAI,CAAJ,qBAAI",
-    "sources": [
-        "main.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["styles/_start.scss","components/_header.scss","styles/_colors.scss","mixins/_background-mixin.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGE;EACA;EACA;;;ACFF;EACI,kBCQc;EDPd;EACA;EELA;EACA;EACA;EACA;;;AFMJ;EACI;EACA;EACA;;AACA;EACI;EACA;EACA","file":"main.css"}

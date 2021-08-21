@@ -1,5 +1,20 @@
-@use "./styles/variables";
+@use "../styles/colors" as *;
+@use "../mixins/background-mixin" as *;
 
-header{
-    background-color: red;
+.blogrHeader{
+    background-color: $mobile-dark-red;
+    height: 100vh;
+    display: block;
+    @include bgImage('/images/bg-pattern-intro.svg');
+    
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .toggleBtn{
+        border:none;
+        outline: none;
+        background-color: transparent;
+    }
 }

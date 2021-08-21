@@ -3,9 +3,28 @@
 ::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@use "./components/header";
+.blogrHeader {
+  background-color: #ff8f70;
+  height: 100vh;
+  display: block;
+  background-image: url(/images/bg-pattern-intro.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .toggleBtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=main.css.map */
