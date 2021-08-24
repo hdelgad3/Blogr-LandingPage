@@ -1,20 +1,61 @@
 @use "../styles/colors" as *;
 @use "../mixins/background-mixin" as *;
+@use "../styles/font" as *;
 
-.blogrHeader{
-    background-color: $mobile-dark-red;
-    height: 100vh;
-    display: block;
-    @include bgImage('/images/bg-pattern-intro.svg');
-    
+.blogrHeader {
+  background-color: $mobile-dark-red;
+  height: 100vh;
+  display: block;
+  @include bgImage("/images/bg-pattern-intro.svg");
 }
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    .toggleBtn{
-        border:none;
-        outline: none;
-        background-color: transparent;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .toggleBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  padding: 2rem;
+}
+.headerLinks {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: white;
+  width: 70%;
+  margin: 3rem;
+  height: 230px;
+  bottom: 50px;
+  font-family: $overpass-font;
+  font-size: large;
+  .headerBtns {
+    margin: 0.5rem;
+    font-family: $overpass-font;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+  }
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
     }
+  }
+  .menuTabs {
+    overflow: hidden;
+  }
+}
+.showMenu {
+  display: flex;
+}
+.menuTabPanel {
+  display: none;
+  overflow: hidden;
+  background-color: $footer-text-color;
 }

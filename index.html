@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel='stylesheet' href='./scss/main.css' />
-  <title>Frontend Mentor | [Blogr]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Nav bar-->
+      <nav class="blogrHeader">
+        <div>
+          <div class="navbar">
+            <a href="#"><img src="/images/logo.svg" alt="Blogr Logo" /></a>
+            <button class="toggleBtn" type="button">
+              <img
+                src="/images/icon-hamburger.svg"
+                alt="Common Hamburger Button"
+              />
+            </button>
+          </div>
+          <article class="headerLinks">
+            <button class="productBtn headerBtns">Product</button>
+            <div class="menuTabs">
+              <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#integrations">Integrations</a></li>
+              </ul>
+            </div>
 
-  <header>
+            <button class="companyBtn headerBtns">Company</button>
+            <div class="menuTabs">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#careers">Careers</a></li>
+              </ul>
+            </div>
 
-  <!--Nav bar-->
-  <nav class='blogrHeader'>
-    <div>
-      <div class='navbar'>
-          <a href='#'><img src='/images/logo.svg' alt='Blogr Logo'/></a>
-          <button class='toggleBtn' type='button'><img src='/images/icon-hamburger.svg'/></button>
-      </div>
-      <ul class='headerLinks'>
-        <li><a href='#Overview'>Overview</a></li>
-      </ul>
-    </div>
-  </nav>
-  <ul>
-    
-  </ul>
-  <section>
+            <button class="connectBtn headerBtns">Connect</button>
+            <div class="menuTabs">
+              <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#linkedIn">LinkedIn</a></li>
+              </ul>
+            </div>
 
-  </section>
-  </header>
+            <br />
 
-  <!-- Product
+            <ul>
+              <li><a href="#Login">Login</a></li>
+              <li><button class="signUpBtn">Sign Up</button></li>
+            </ul>
+          </article>
+        </div>
+      </nav>
+      <section></section>
+    </header>
+
+    <!-- Product
 
   Overview
   Pricing
@@ -114,10 +158,12 @@
   Newsletter
   LinkedIn -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  <script src='app.js' ></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
