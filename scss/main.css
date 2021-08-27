@@ -43,6 +43,11 @@
   bottom: 50px;
   font-family: "Overpass", sans-serif;
   font-size: large;
+  border-radius: 3%;
+}
+.headerLinks .headerBtns:before {
+  content: url("/images/icon-arrow-dark.svg");
+  float: right;
 }
 .headerLinks .headerBtns {
   margin: 0.5rem;
@@ -51,6 +56,10 @@
   font-weight: 600;
   border: none;
   background-color: transparent;
+  color: #1f3f5b;
+}
+.headerLinks .headerBtns:focus {
+  color: #4b5862;
 }
 .headerLinks ul {
   list-style: none;
@@ -67,9 +76,35 @@
 }
 
 .menuTabPanel {
-  display: none;
+  display: block;
   overflow: hidden;
   background-color: #c8c8cb;
+  height: 100px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuList li a {
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-size: large;
+  font-family: "Overpass", sans-serif;
+}
+.menuList li .signUpBtn {
+  color: white;
+  background-color: #ff8f70;
+  border-radius: 5%;
+  border: none;
+  border-radius: 15px;
+  width: 90px;
+  height: 30px;
+  font-size: large;
+  font-family: "Overpass", sans-serif;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -33,6 +33,14 @@
   bottom: 50px;
   font-family: $overpass-font;
   font-size: large;
+  border-radius: 3%;
+  .headerBtns:before {
+    content: url("/images/icon-arrow-dark.svg");
+    float: right;
+  }
+  // .headerBtns:after {
+  //   content: url("/images/icon-arrow-light.svg");
+  // }
   .headerBtns {
     margin: 0.5rem;
     font-family: $overpass-font;
@@ -40,6 +48,10 @@
     font-weight: 600;
     border: none;
     background-color: transparent;
+    color: $headings-color;
+  }
+  .headerBtns:focus {
+    color: $body-copy-color;
   }
   ul {
     list-style: none;
@@ -55,7 +67,35 @@
   display: flex;
 }
 .menuTabPanel {
-  display: none;
+  display: block;
   overflow: hidden;
   background-color: $footer-text-color;
+  height: 100px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    a {
+      color: $headings-color;
+      font-family: $overpass-font;
+      font-size: large;
+      font-family: $overpass-font;
+    }
+    .signUpBtn {
+      color: white;
+      background-color: $mobile-dark-red;
+      border-radius: 5%;
+      border: none;
+      border-radius: 15px;
+      width: 90px;
+      height: 30px;
+      font-size: large;
+      font-family: $overpass-font;
+      margin-top: 10px;
+    }
+  }
 }
