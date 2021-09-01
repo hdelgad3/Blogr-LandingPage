@@ -5,7 +5,7 @@ const headerBtns = document.querySelectorAll(".headerBtns");
 toggleBtn.addEventListener("click", () => {
   headerMenu.classList.toggle("showMenu");
 });
-
+//idk lol
 for (let i = 0; i < headerBtns.length; i++) {
   headerBtns[i].addEventListener("click", () => {
     headerBtns[i].classList.toggle("MenuTabPanel");
