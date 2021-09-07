@@ -8,10 +8,21 @@
     height: 60%;
     background-color: $white-text-color;
     border-radius: 2%;
+    .menuTab{
+        .tabName {
+            
+        }
+        .tabLinks{
+            display:none;
+        }
+    }
 }
 .displayMenu{
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.displayLinks {
+    display:block;
 }
