@@ -16,12 +16,19 @@
   background-color: white;
   border-radius: 2%;
 }
+.headerMenu .menuTab .tabLinks {
+  display: none;
+}
 
 .displayMenu {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.displayLinks {
+  display: block;
 }
 
 .blogrHeader {
