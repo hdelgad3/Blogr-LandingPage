@@ -5,6 +5,7 @@ const menuTab = document.querySelectorAll(".menuTab");
 // Toggle Menu when hamburger button clicked.
 toggleBtn.addEventListener("click", () => {
   headerMenu.classList.toggle("displayMenu");
+  toggleBtn.i;
 });
 
 // toggle links in tab

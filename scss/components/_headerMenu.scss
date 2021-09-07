@@ -4,11 +4,12 @@
 .headerMenu {
   display: none;
   align-self: center;
-  left: 50%;
   width: 85%;
   height: 60%;
   background-color: $white-text-color;
   border-radius: 2%;
+  top: 10%;
+  position: absolute;
   .menuTab {
     .tabName {
       display: grid;
