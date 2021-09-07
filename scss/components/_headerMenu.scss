@@ -1,0 +1,17 @@
+@use "../styles/colors" as *;
+
+.headerMenu{
+    display: none;
+    align-self: center;
+    left: 50%;
+    width: 85%;
+    height: 60%;
+    background-color: $white-text-color;
+    border-radius: 2%;
+}
+.displayMenu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
