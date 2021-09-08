@@ -28,12 +28,28 @@
   border: none;
   background-color: transparent;
   font-family: "Overpass", sans-serif;
-  font-size: large;
+  font-size: 1.4rem;
   font-weight: 900;
   color: #2c2d3f;
 }
 .headerMenu .menuTab .tabLinks {
   display: none;
+  background-color: #efeff1;
+  width: 70vw;
+  padding: 1rem;
+}
+.headerMenu .menuTab .tabLinks a {
+  font-size: large;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #4b5862;
+  padding: 0.5rem;
+}
+.headerMenu .menuTab .displayLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .displayMenu {
@@ -43,8 +59,33 @@
   flex-direction: column;
 }
 
-.displayLinks {
-  display: block;
+.menuLine {
+  background-color: #efeff1;
+  width: 15rem;
+  height: 0.2rem;
+}
+
+.bottomofMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottomofMenu a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 800;
+  color: #2c2d3f;
+}
+.bottomofMenu button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  width: 35vw;
+  height: 6vh;
+  border-radius: 1.5rem;
 }
 
 .blogrHeader {
@@ -71,6 +112,7 @@
   border: none;
   outline: none;
   background-color: transparent;
+  position: relative;
 }
 
 .headerBody {
@@ -85,14 +127,15 @@
 .headerBody h1 {
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-align: center;
-  width: 18.5rem;
+  width: 19rem;
+  margin-left: 0.5rem;
 }
 .headerBody p {
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: large;
+  font-size: 1.2rem;
   text-align: center;
 }
 .headerBody .headerBodyBtns {

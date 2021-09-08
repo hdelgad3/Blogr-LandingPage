@@ -5,7 +5,12 @@ const menuTab = document.querySelectorAll(".menuTab");
 // Toggle Menu when hamburger button clicked.
 toggleBtn.addEventListener("click", () => {
   headerMenu.classList.toggle("displayMenu");
-  toggleBtn.i;
+  if(toggleBtn.children[0].src.match("/images/icon-hamburger.svg")) {
+    toggleBtn.children[0].src = "/images/icon-close.svg";
+  }
+  else{
+    toggleBtn.children[0].src = "/images/icon-hamburger.svg";
+  }
 });
 
 // toggle links in tab
@@ -14,10 +19,12 @@ menuTab.forEach((tab) => {
   // console.log(tab.children[1]);
   btn.addEventListener("click", () => {
     menuTab.forEach((item) => {
-      if (item != btn) {
+      // console.log(item)
+      // console.log(tab)
+      if (item != tab) {
         item.classList.remove("displayLinks");
-      }
+      } 
     });
-    tab.classList.toggle("displayLinks");
+    tab.children[1].classList.toggle("displayLinks");
   });
 });

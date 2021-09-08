@@ -17,12 +17,11 @@
       grid-template-columns: 1fr;
       align-items: center;
       justify-content: center;
-
       .menuBtn {
         border: none;
         background-color: transparent;
         font-family: $overpass-font;
-        font-size: large;
+        font-size: 1.4rem;
         font-weight: 900;
         color: $dark-grey-blue;
       }
@@ -30,7 +29,23 @@
 
     .tabLinks {
       display: none;
+      background-color: rgb(239,239,241);
+      width: 70vw;
+      padding: 1rem;
+      a {
+          font-size: large;
+          text-decoration: none;
+          font-family: $overpass-font;
+          font-weight: 600;
+          color: $body-copy-color;
+          padding: 0.5rem;
+      }
     }
+    .displayLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
   }
 }
 .displayMenu {
@@ -39,6 +54,30 @@
   justify-content: center;
   flex-direction: column;
 }
-.displayLinks {
-  display: block;
+.menuLine {
+    background-color: rgb(239,239,241);
+    width:15rem;
+    height:0.2rem;
+}
+.bottomofMenu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: $overpass-font;
+        font-weight: 800;
+        color: $dark-grey-blue;
+    }
+    button {
+      font-family: $ubuntu-font;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      width: 35vw;
+      height: 6vh;
+      border-radius: 1.5rem;
+    }
 }
